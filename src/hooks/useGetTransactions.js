@@ -7,7 +7,7 @@ const useGetTransactions = () => {
     const transactionCollectionRef = collection(db,'transactions')
     const {userID} = useGetUserInfo()
 
-    const [transactions,setTransactions] = useState([])
+    const [transactions,setTransactions] = useState()
 
     const [transactionsTotals,setTransactionsTotals] = useState({balance:0,totalIncome:0,totalExpense:0})
 
