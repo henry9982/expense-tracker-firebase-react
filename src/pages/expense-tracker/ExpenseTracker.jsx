@@ -12,6 +12,7 @@ import { AiOutlineCloseCircle } from "react-icons/ai";
 import { LuArrowBigDownDash, LuArrowBigUpDash } from "react-icons/lu";
 import { MdOutlineAccountBalanceWallet } from "react-icons/md"
 import useUpdateTransaction from '../../hooks/useUpdateTransaction'
+import Loader from '../loader/Loader'
 
 
 const ExpenseTracker = () => {
@@ -196,7 +197,8 @@ const ExpenseTracker = () => {
                                 </div>
                             </form>
                         </div>}
-                </div>:<div>Loading...</div>}
+
+                </div>:<Loader/>}
             </>
           )
     }
